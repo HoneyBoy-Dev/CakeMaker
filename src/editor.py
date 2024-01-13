@@ -6,14 +6,8 @@ ck.root = config.screen
 
 obj = {}
 
-obj['label'] = ck.Label(
-    text= 'Close',
-    gradient= [(255, 255, 255), (62, 156, 188 )], 
-    padding = 10,
-    border_color= (60, 60, 60),
-    border_size=1,
-    color=(30, 30, 30),
-)
-
-
-
+texting = ck.Label(text='jaja') 
+texting.config(text='no', bg=(255, 0, 0))
+texting.hover(text='si')
+#obj['button'] = ck.Button(x=120, y=100)
+#obj['button2'] = ck.Button(x=100, y=100)

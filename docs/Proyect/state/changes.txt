@@ -1,0 +1,10 @@
+no hace falta instanciar la variable primero, ejemplo:
+No:
+self.text = 'text'
+self.text = kwargs.get('text', self.text)
+Si:
+self.text = kwargs.get('text', 'text')
+
+Explicacion:
+
+    kwargs.get(nombre de la propiedad esperada, valor por defecto si no se le aplico una)
